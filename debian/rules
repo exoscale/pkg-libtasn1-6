@@ -29,7 +29,7 @@ ifeq ($(filter --disable-gtk-doc,$(AMCONFBUILDINDEP)),)
 endif
 
 override_dh_strip:
-	dh_strip --ddeb-migration='libtasn1-6-dbg (<< 4.7-3~)'
+	dh_strip --dbg-package=libtasn1-6-dbg
 
 override_dh_compress:
 	dh_compress --exclude=libtasn1.pdf
